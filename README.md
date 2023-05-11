@@ -5,7 +5,7 @@ This repository includes the code of the transition-based SSA model described in
 This implementation requires Python 2.7, PyTorch 0.3.1 and Gensim >= 0.12.0.
   
 ### Data
-First of all, you need to include in the ``data_ssa`` folder datasets developed by Barnes et al. (2021) publicly available at (https://github.com/jerbarnes/sentiment_graphs/tree/master/data/sent_graphs). Then, use the following script to convert them to the proper input format:
+First of all, you need to include in the ``data_ssa`` folder datasets developed by Barnes et al. (2021) [publicly available](https://github.com/jerbarnes/sentiment_graphs/tree/master/data/sent_graphs). Then, use the following script to convert them to the proper input format:
 
      python ./scripts/get_data.sh 
 
@@ -16,14 +16,14 @@ In addition, you need to include the pre-trained word embeddings in the ``embs``
     wget http://vectors.nlpl.eu/repository/20/34.zip (Catalan)
     wget http://vectors.nlpl.eu/repository/20/18.zip (English)
 
-After unzip each embedding folder in ``embs``, please rename it as ``eu``, ``ca``, ``ds_unis``, ``mpqa`` or ``norec`` (noting that English embeddings must be duplicated for the two English datasets).  Bert-based embeddings can be provided upon request.
+After unzipping each embedding folder in ``embs``, please rename them as ``eu``, ``ca``, ``ds_unis``, ``mpqa`` or ``norec`` (noting that English embeddings must be duplicated for the two English datasets).  Bert-based embeddings can be provided upon request.
 
 ### Experiments
 To train the model, run the following script:
 
     ./scripts/run.sh <model_name> <dataset> <encoding>
 
-where in <dataset> we indicate the ``eu``, ``ca``, ``ds_unis``, ``mpqa`` or ``norec`` dataset used for training, and in <encoding> we choose the ``head_first`` or ``head_final`` dependency-based encoding.
+where we indicate in ``<dataset>`` the ``eu``, ``ca``, ``ds_unis``, ``mpqa`` or ``norec`` dataset used for training, and we choose the ``head_first`` or ``head_final`` dependency-based representation in ``<encoding>``.
 
 
 
