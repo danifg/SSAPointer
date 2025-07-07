@@ -1,5 +1,5 @@
 # SSAPointer
-This repository includes the code of the transition-based SSA model described in the paper [Structured Sentiment Analysis as Transition-based Dependency Parsing](https://arxiv.org/pdf/2305.05311.pdf). The implementation is based on the SDP parser by Fernández-González and Gómez-Rodríguez (2020) (https://github.com/danifg/SemanticPointer) and reuses part of its code.
+This repository includes the code of the transition-based SSA model described in the paper [Structured Sentiment Analysis as Transition-based Dependency Parsing](). The implementation is based on the SDP parser by Fernández-González and Gómez-Rodríguez (2020) (https://github.com/danifg/SemanticPointer) and reuses part of its code.
 
 ### Requirements
 This implementation requires Python 2.7, PyTorch 0.3.1 and Gensim >= 0.12.0.
@@ -43,17 +43,10 @@ Please note that, in order to run the ``eval.sh`` script, a separate virtual env
 
 ### Citation
 
-    @misc{fernandezgonzalez2023structured,
-      title={Structured Sentiment Analysis as Transition-based Dependency Parsing}, 
-      author={Daniel Fernández-González},
-      year={2023},
-      eprint={2305.05311},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
-    }
+    
     
 ### Acknowledgments
-We acknowledge ERDF/MICINN-AEI (SCANNER-UDC, PID2020-113230RB-C21), Xunta de Galicia (ED431C 2020/11), and Centro de Investigaci\'on de Galicia ``CITIC'', funded by Xunta de Galicia and the European Union (ERDF - Galicia 2014-2020 Program), by grant ED431G 2019/01. 
+We acknowledge grants SCANNER-UVIGO (PID2020-113230RB-C22) funded by MICIU/AEI/10.13039/501100011033, and LATCHING-UVIGO (PID2023-147129OB-C22) funded by MICIU/AEI/10.13039/501100011033 and ERDF/EU. 
 
 ### Contact
-If you have any suggestion, inquiry or bug to report, please contact d.fgonzalez@udc.es.
+If you have any suggestion, inquiry or bug to report, please contact danifg@uvigo.es.
